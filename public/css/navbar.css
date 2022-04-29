@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-navbar{
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(224, 227, 194);
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    padding: 1rem;
+}
+.nav-anchors{
+    color: #000;
+    text-decoration: none;
+}
+.not-main{
+    display: none;
+}
+@media screen and (max-width:900px){
+    .main-content{
+        display: none !important;
+    }
+    .not-main{
+        display: block;
+        margin: auto;
+    }
+    
+}

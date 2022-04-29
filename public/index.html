@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/util.css">
+    <title>TIMETABLE</title>
+</head>
+<body>
+    <nav class="main-navbar flex">
+      <div class="main-logo">
+          <h3 class="logo">LOGO</h3>
+      </div>
+      <ul class="nav-links flex">
+          <li><a href="#" class="nav-anchors">HOME</a></li>
+          <li><a href="#" class="nav-anchors">ABOUT</a></li>
+          <li><a href="#" class="nav-anchors">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <main class="main-content flex">
+        <section class="input-section flex">
+            <h3 class="primary-heading">welcome!</h3>
+            <form action="./branchDetails.html" id="input-form" method="get" class="forms flex">
+            <div class="branch-input flex">
+                <label for="noofbranches" class="label">ENTER NO OF BRANCHES</label>
+             <input name="noofbranches" type="number" id="branchNo" class="input"required >
+             <span class="letter"></span>
+        </div>     
+            <div class="branch-input flex">
+                <label for="noofcourses" class="label">ENTER NO OF COURSES</label>
+             <input name="noofcourses" type="number" id="courseNo" class="input" required >
+             <span class="letter"></span>
+        </div>     
+            <div class="branch-input flex">
+                <label for="nooffaculty" class="label">ENTER NO OF FACULTY</label>
+             <input name="nooffaculty" type="number" id="facultyNo" class="input"required >
+             <span class="letter"></span>
+        </div>     
+        <button type="submit" onclick="validate()" id="submitbtn" class="primary-btn ">next</button>
+    </form>
+</section>
+</main>
+<div class="not-main">please use your laptop to view</div>
+    <script src="./javascript/index.js"></script>
+</body>
+</html>
+    <!-- 13b-1y2y-csecsb-flds-l -->
