@@ -1,0 +1,13 @@
+.wrapper{
+    width: 100%;
+}
+.innerwrapper{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin: 1rem auto;
+    gap: 1rem;
+    border: 2px solid red;
+}

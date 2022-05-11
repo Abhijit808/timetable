@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/next.css">
     <link rel="stylesheet" href="./css/util.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/timefaculty.css">
+    <title>timetable</title>
 </head>
 <body>
     <nav class="main-navbar flex">
@@ -20,18 +20,11 @@
             <li><a href="#" class="nav-anchors">CONTACT US</a></li>
         </ul>
       </nav>
-      <main class="main-content flex">
-        <section class="input-section-next flex">
-            <h3 class="primary-heading">please enter details</h3>
-            <form action="/post/faculty" id="input-form" method="post" class="forms-next flex">
-             <!-- <div class="branchName">
-                 <label for="branchName"></label>
-                 <input type="text" name = "branchName" id="BranchName" required>
-             </div> -->
-        <button type="submit"  id="submitbtn" class="primary-btn">next</button>
-    </form>
-</section>
-</main>
-    <script src="./javascript/faculty.js"></script>
+      <main class="mian-content">
+          <h3>enter details</h3>
+          <form action="/post/faculty" method="post" id="completeDetails">
+          </form>
+      </main>
+    <script src="./javascript/timefaculty.js"></script>
 </body>
 </html>

@@ -7,16 +7,16 @@ const Courses = window.localStorage.getItem("requiredcoursenamefeilds");
 console.log(facultyNames);
 console.log(Branches);
 console.log(Courses);
-for (let index = 1; index <= Courses; index++) {
+for (let index = 1; index <= facultyNames; index++) {
     const div =document.createElement("div");
     div.classList.add("Branchnames","flex");
     lastchild.append(div);
     const label = document.createElement("label");
     label.htmlFor = "facultyName";
-    label.innerText =`faculty${Branches-index+1}: `;
+    label.innerText =`faculty${facultyNames-index+1}: `;
     div.append(label);
     const input = document.createElement("input");
-    input.name = `Faculty_Name_${index}`;
+    input.name = `FacultyName`;
     input.type="text";
     input.className = "input"
     input.required=true;

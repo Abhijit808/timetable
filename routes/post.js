@@ -1,24 +1,11 @@
 const express = require("express");
 const route = express.Router();
+const controller = require('../controllers/routecontrollers')
 const fs = require('fs');
 const path = require('path');
 route.use(express.static(path.join(__dirname,'..','public')))
-route.post("/BranchNames",(req,res)=>{
-    const b = req.body;
-    const a =fs.writeFileSync('abc.txt',JSON.stringify(b));
-    // res.send("done!!!")
-    res.status(200).sendFile(path.join(__dirname,'..','public','courses.html'));
-});
-route.post("/courses",(req,res)=>{
-    const b = req.body;
-    const a =fs.writeFileSync('abcd.txt',JSON.stringify(b));
-    // res.send("done!!!")
-    res.status(200).sendFile(path.join(__dirname,'..','public','facultynames.html'));
-});
-route.post("/faculty",(req,res)=>{
-    const b = req.body;
-    const a =fs.writeFileSync('abcde.txt',JSON.stringify(b));
-    res.send("creating timetable")
-});
-
+route.use(express.json()); 
+route.post("/BranchNames",controller.Branchname);
+route.post("/courses",controller.CourseName);
+route.post("/faculty",controller.FacultyName);
 module.exports= route

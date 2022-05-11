@@ -13,10 +13,10 @@ for (let index = 1; index <= Courses; index++) {
     lastchild.append(div);
     const label = document.createElement("label");
     label.htmlFor = "courseName";
-    label.innerText =`course ${Branches-index+1}: `;
+    label.innerText =`course ${Courses-index+1}: `;
     div.append(label);
     const input = document.createElement("input");
-    input.name = `Course_Name_${index}`;
+    input.name = `CourseName`;
     input.type="text";
     input.className = "input"
     input.required=true;

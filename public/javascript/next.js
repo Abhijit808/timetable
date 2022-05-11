@@ -16,7 +16,7 @@ for (let index = 1; index <= Branches; index++) {
     label.innerText =`Branch ${Branches-index+1} : `;
     div.append(label);
     const input = document.createElement("input");
-    input.name = `BranchName_${index}`;
+    input.name = `BranchName`;
     input.type="text";
     input.className = "input"
     input.required=true;
